@@ -49,6 +49,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 4. Open the Chrome browser and skip the sign-in process.  **DO NOT** reinstall Chrome or attempt to finish the update.
 
 > Note: Kyber level PQC was an early access feature in Chrome; this has been removed from the current release of Chrome. We will be using an older version to demonstrate our capabilities.
+<br>
 
 ![chrome-login](images/image05.png)
 
