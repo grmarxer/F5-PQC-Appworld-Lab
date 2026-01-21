@@ -203,7 +203,7 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
     >Note: Do not disconnect or close your existing TMUI connection  
     <br>  
-![web_shell](images/image50.png)
+    ![web_shell](images/image50.png)
     <br>  
 ![web_shell1](images/image51.png)
 <br>
