@@ -202,9 +202,9 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 1. Log into TMSH on BIG-IP using the `Web Shell`  
 
     >Note: Do not disconnect or close your existing TMUI connection  
-    <br>
+    <br>  
     ![web_shell](images/image50.png)
-    <br>
+    <br>  
     ![web_shell1](images/image51.png)
 <br>
 <br>
