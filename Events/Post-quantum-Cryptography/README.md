@@ -8,16 +8,11 @@ F5 Post-quantum cryptography readiness: https://www.f5.com/pdf/solution-overview
 
 PQC key benefits:
 
-Cryptography is embedded into the core of the F5® Application Delivery and Security Platform (ADSP) via the F5 BIG-IP® Traffic Management Microkernel (TMM), a foundational
-element of BIG-IP solutions. 
+Cryptography is embedded into the core of the F5® Application Delivery and Security Platform (ADSP) via the F5 BIG-IP® Traffic Management Microkernel (TMM), a foundational element of BIG-IP solutions. 
 
-NGINX provides PQC support using the Open Quantum Safe provider library for OpenSSL 3.x (oqs-provider). This library is available from the Open Quantum Safe (OQS) project. The oqs-provider library adds support for all post-quantum algorithms supported by the OQS project into network protocols like TLS in OpenSSL-3 reliant applications. All ciphers/algorithms provided by oqs-provider are supported by NGINX. 
+NGINX provides PQC support using the Open Quantum Safe provider library for OpenSSL 3.x (oqs-provider). This library is available from the Open Quantum Safe (OQS) project. The oqs-provider library integrates the post-quantum algorithms from the OQS project into network protocols (e.g., TLS) for applications that use OpenSSL 3. All ciphers/algorithms provided by oqs-provider are supported by NGINX. 
 
-- Centralizes management of cryptographic handshakes and encryption processes
-- Enables crypto agility for easier adaptation to emerging cryptographic standards and strategies
-- Supports quantum-resistant ciphers for both clients and servers, providing hybrid key encapsulation for robust PQC protection
-
-Because of its pivotal role in network and application architectures—managing traffic between clients and servers—F5 ADSP is strategically positioned to facilitate and ensure PQC readiness while adapting seamlessly as encryption standards evolve.
+F5 ADSP plays a pivotal role in network and application architectures by managing traffic between clients and servers. As a result, it is strategically positioned to facilitate PQC readiness and adapt seamlessly to evolving encryption standards.
 
 ## Lab Environment
 
@@ -27,7 +22,7 @@ This lab environment contains three parts:
 - NGINX Open Source Server
 - Windows-client
 
-![lab](images/image00.png)
+![lab](images/image00-R.png)
 
 ### Windows-client
 
