@@ -46,7 +46,9 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 ![rdp-cert](images/image03.png)
 
-4. Open the Chrome browser and skip the sign-in process
+4. Open the Chrome browser and skip the sign-in process.  **DO NOT** reinstall Chrome or attempt to finish the update.
+
+> Note: Kyber level PQC was an early access feature in Chrome; this has been removed from the current release of Chrome. We will be using an older version to demonstrate our capabilities.
 
 ![chrome-login](images/image05.png)
 
@@ -58,7 +60,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 ![chrome-system](images/image07.png)
 
-> Note: Kyber level PQC was an early access feature in Chrome; this has been removed from the current release of Chrome. We will be using an older version to demonstrate our capabilities; please refrain from updating the Chrome browser.
+
 
 ### BIG-IP Setup
 
