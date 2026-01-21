@@ -30,7 +30,7 @@ This lab environment contains three parts:
 
 From the Windows-client, we will be able to access the BIG-IP TMUI and the websites protected with PQC profiles/OpenSSL behind both BIG-IP and NGINX.
 
-1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows Client
+1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows-client.
     - MAC users should connect with RDP.
     - Windows users should use Console
 
@@ -38,7 +38,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 ![rdp](images/image01-R.png)
 
-2. Credentials for the Windows-client are also located on the details page
+2. Windows-client admin credentials - uQpLYwsLUrsyz
 
 ![password](images/image02.png)
 
