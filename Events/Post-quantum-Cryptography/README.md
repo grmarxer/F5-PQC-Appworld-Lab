@@ -246,6 +246,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 ![nginx-conf](images/image29.png)
 
 <br>
+
 3. As a best practice in the nginx.The conf file includes another location for the PQC listener. From the prompt, view the included PQC listener: 
 
 ```cat /opt/nginx/conf.d/pqc.conf```
