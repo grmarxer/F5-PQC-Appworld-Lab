@@ -36,7 +36,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
 
-![rdp](images/image01-R.png)
+![rdp](images/image01.png)
 
 2. Windows-client admin credentials - uQpLYwsLUrsyz
 
