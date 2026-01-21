@@ -201,7 +201,7 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 1. Log into TMSH on BIG-IP using the `Web Shell`  
 
->Note: Do not disconnect or close you TMUI connection  
+>Note: Do not disconnect or close your existing TMUI connection  
 <br>
 
 ![web shell](images/image50.png)
@@ -209,6 +209,22 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 ![web shell1](images/image51.png)
 <br>
+
+2. View the `TMSH_PQC` profile statistics 
+
+```tmsh show ltm profile client-ssl TMSH_PQC```  
+
+
+Note the `protocol` and `DH group`    
+
+
+3.  View the `pqc_vs` virtual server statistics
+
+```tmsh show ltm virtual pqc_vs```
+
+<br>
+<br>
+
 
 ### NGINX Setup
 
