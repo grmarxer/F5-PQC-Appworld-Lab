@@ -213,15 +213,15 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 2. View the `TMSH_PQC` profile statistics 
 
-```tmsh show ltm profile client-ssl TMSH_PQC```  
+    ```tmsh show ltm profile client-ssl TMSH_PQC```  
 
-  Note the **protocol** and **DH group**    
+    Note the **protocol** and **DH group**    
 
 <br>
 
 3.  View the `pqc_vs` virtual server statistics
 
-```tmsh show ltm virtual pqc_vs```
+    ```tmsh show ltm virtual pqc_vs```
 
 <br>
 <br>
