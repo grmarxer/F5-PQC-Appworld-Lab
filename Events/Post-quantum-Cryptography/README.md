@@ -118,6 +118,7 @@ The BIG-IP Configuration has already been completed for the lab. If you would li
 
 ![pqc-tmsh](images/image12.png)
 <br>
+
 5. Explore the TMSH_PQC rule, and verify the setup
 
 ![pqc-tmsh-rule](images/image13.png)
