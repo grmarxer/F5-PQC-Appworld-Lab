@@ -14,7 +14,7 @@ F5 ADSP plays a pivotal role in network and application architectures by managin
 
 NGINX provides PQC support using the Open Quantum Safe provider library for OpenSSL 3.x (oqs-provider). This library is available from the Open Quantum Safe (OQS) project. The oqs-provider library integrates the post-quantum algorithms from the OQS project into network protocols (e.g., TLS) for applications that use OpenSSL 3. All ciphers/algorithms provided by oqs-provider are supported by NGINX. 
 
-
+[Understanding PQC Standards and Timelines](https://www.f5.com/company/blog/understanding-pqc-standards-and-timelines)
 
 ## Lab Environment
 
@@ -76,37 +76,40 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 ### BIG-IP Setup
 
-BIG-IP has 17.5 installed. In 17.1, PQC for client-side SSL profiles was introduced, which we will explore in this lab. In 17.5.1, PQC for server-side SSL profiles was added, and both client and server-side ciphers were updated to the NIST standards at the time of publication.
+BIG-IP has version 17.5.1.3.0.0.19 installed. In version 17.1, PQC for client-side SSL profiles was introduced, which we will explore in this lab. In version 17.5.1, PQC for server-side SSL profiles was added, and both client and server-side ciphers were updated to the NIST standards at the time of publication.
 
-BIG-IP supports both Kyber and ML-KEM, in this lab we will be showing Kyber, though ML-KEM is more widely adopted.
+BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, though ML-KEM is more widely adopted.
 
-> Note: We will not be doing server-side SSL PQC setup; however, the environment supports it, for exploration.
-
-Understanding PQC Standards and Timelines: ```https://www.f5.com/company/blog/understanding-pqc-standards-and-timelines```
+> Note: We will not demonstrate server-side SSL PQC in this lab; however, the environment supports it, for exploration.
 
 1. Log in to the BIG-IP to verify access and configuration
 
 From the Chrome browser, open the BIG-IP TMUI: ```https://10.1.1.6```
 
-![tmui-warning](images/image08.png)
-![tmui-accept](images/image09.png)
-
-User: admin
+User: admin  
 Password admin
+<br>
+
+![tmui-warning](images/image08.png)  
+<br>
+
+![tmui-accept](images/image09.png)
+<br>
 
 ![tmui-login](images/image10.png)
+<br>
 
 2. Post-quantum crypto configuration
 
 BIG-IP utilizes SSL Profiles for client and server-side TLS negotiations. Within the SSL Profile, attached cipher groups manage the cipher rules for negotiation.
 
-Configuration has already been created on behalf of the lab. If you would like to configure and familiarize yourself with a new SSL profile, here is the public documentation for 17.5 and 17.5.1: ```https://my.f5.com/manage/s/article/K000149577```
+The BIG-IP Configuration has already been completed for the lab. If you would like to configure and familiarize yourself with a new SSL profile, please use the following knowledge article as a reference: [K000149577: Enable post-quantum cryptography in F5 BIG-IP TMOS](https://my.f5.com/manage/s/article/K000149577)
 
 3. Navigate to BIG-IP cipher rules
 
 ![cipher-rules](images/image11.png)
 
-4. Like the example documentation, there are two created PQC profiles, one made from the TMUI and the other from TMSH
+4. The `TMSH_PQC` PQC profile has been created for you using TMSH.  Please review it using TMUI.
 
 ![pqc-tmsh](images/image12.png)
 
