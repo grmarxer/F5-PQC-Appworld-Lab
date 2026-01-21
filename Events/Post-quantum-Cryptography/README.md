@@ -55,7 +55,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 5. Set Chrome as the default browser. This will need to be done in two places, the browser itself and in Windows System properties.  
 
-> Set Chrome as the default browser in Chrome
+    **Set Chrome as the default browser in Chrome**
 
 ![chrome-default](images/image06-R.png)  
 
@@ -65,7 +65,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 <br>
 
-> Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome
+    **Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome**  
 <br>
 ![chrome-system](images/image07-R.png)
 
