@@ -6,7 +6,7 @@ While quantum computing won't necessarily benefit everyday tasks like web surfin
 
 F5 Post-quantum cryptography readiness: https://www.f5.com/pdf/solution-overview/f5-pqc-readiness.pdf
 
-PQC key benefits:
+**PQC key benefits:**
 
 Cryptography is embedded into the core of the F5® Application Delivery and Security Platform (ADSP) via the F5 BIG-IP® Traffic Management Microkernel (TMM), a foundational element of BIG-IP solutions. 
 
