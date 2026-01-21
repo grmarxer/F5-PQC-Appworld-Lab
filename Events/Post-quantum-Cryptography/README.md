@@ -38,7 +38,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 ![rdp](images/image01.png)
 
-2. Windows-client admin credentials - uQpLYwsLUrsyz
+2. Windows-client admin credentials - **uQpLYwsLUrsyz**
 
 ![password](images/image02.png)
 
@@ -55,7 +55,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 5. Set Chrome as the default browser. This will need to be done in two places, the browser itself and in Windows System properties.  
 
-6. Set Chrome as the default browser in Chrome**
+6. Set Chrome as the default browser in Chrome
 
 ![chrome-default](images/image06.png)  
 
@@ -67,6 +67,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 7. Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome
 <br>
+
 ![chrome-system](images/image07.png)
 
 
