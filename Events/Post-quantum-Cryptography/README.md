@@ -57,11 +57,11 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 5a. Set Chrome as the default browser in Chrome
 
-![chrome-default](images/image06-R.jpg)  
+![chrome-default](images/image06.png)  
 
 <br>
 
-![chrome-default1](images/imagea.png)
+![chrome-default1](images/image06-2.png)
 
 <br>
 
