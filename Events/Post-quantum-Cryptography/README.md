@@ -152,18 +152,24 @@ The BIG-IP Configuration has already been completed for the lab. If you would li
 11. Explore the pqc_vs virtual server, and verify the setup
 
 ![pqc-virtual-server](images/image20.png)
+<br>
+<br>
 
 ### BIG-IP Chrome PQC settings
 
-The Chrome browser has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap.
+The Chrome browser, on the Windows-client has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap.
 
 Enable the security features in Chrome to use the Kyber settings and disable the ML-KEM settings
 
 1. Open the Chrome browser and browse to chrome://flags/
 
-2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and disable "Use ML-KEM in TLS 1.3", and relaunch the browser
+2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and disable "Use ML-KEM in TLS 1.3", and relaunch the browser  
+
+>Note: Use find (ctrl-f) to quickly locate the ```TLS``` settings above
 
 ![pqc-big-ip-browser-settings](images/image21.png)
+<br>
+<br>
 
 ### BIG-IP PQC Virtual Server Validation
 
