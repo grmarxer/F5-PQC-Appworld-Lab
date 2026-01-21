@@ -61,7 +61,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 <br>
 
-![chrome-default1](images/image06-2-R.png)
+![chrome-default1](images/imagea.png)
 
 <br>
 
