@@ -67,7 +67,7 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 5b. Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome
 <br>
-![chrome-system](Events/Post-quantum-Cryptography/images/image07-R.png)
+![chrome-system](images/image07.png)
 
 
 
