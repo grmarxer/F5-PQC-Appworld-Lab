@@ -46,20 +46,24 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 ![rdp-cert](images/image03.png)
 
-4. Open the Chrome browser and skip the sign-in process.  **DO NOT** reinstall Chrome or attempt to finish the update.
+4. Open the Chrome browser and skip the sign-in process.  **DO NOT** attempt to reinstall Chrome or finish the update.
 
 > Note: Kyber level PQC was an early access feature in Chrome; this has been removed from the current release of Chrome. We will be using an older version to demonstrate our capabilities.
 <br>
 
 ![chrome-login](images/image05.png)
 
-5. Set Chrome as the default browser
+5. Set Chrome as the default browser. This will need to be done in two places, the browser itself and in Windows System properties.  
 
-![chrome-default](images/image06.png)
+> Set Chrome as the default browser in Chrome
 
-6. Set the system-level default to Chrome and close the system properties
-
-![chrome-system](images/image07.png)
+![chrome-default](images/image06-R.png)
+<br>
+![chrome-default1](images/image06-2-R.png)
+<br>
+> Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome
+<br>
+![chrome-system](images/image07-R.png)
 
 
 
