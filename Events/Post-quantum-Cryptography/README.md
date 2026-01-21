@@ -193,7 +193,22 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 5. Scroll the developer tools to the left, exposing Privacy and security to show the TLS negotiation
 
-![tls-kyber](images/image26.png)
+![tls-kyber](images/image26.png)  
+<br>
+<br>
+
+### View PQC Statistics on BIG-IP  
+
+1. Log into TMSH on BIG-IP using the `Web Shell`  
+
+>Note: Do not disconnect or close you TMUI connection  
+<br>
+
+![web shell](images/image50.png)
+<br>
+
+![web shell1](images/image51.png)
+<br>
 
 ### NGINX Setup
 
