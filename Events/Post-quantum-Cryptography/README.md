@@ -30,11 +30,11 @@ This lab environment contains three parts:
 
 From the Windows-client, we will be able to access the BIG-IP TMUI and the websites protected with PQC profiles/OpenSSL behind both BIG-IP and NGINX.
 
-1. Navigate to the details button of the Windows-client and connect with RDP.
+1. Navigate to the details button of the Windows-client. and connect with RDP.
 
 > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
 
-![rdp](images/image01.png)
+![rdp](images/image01-R.png)
 
 2. Credentials for the Windows-client are also located on the details page
 
