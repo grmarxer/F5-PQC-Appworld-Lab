@@ -72,7 +72,8 @@ From the Windows-client, we will be able to access the BIG-IP TMUI and the websi
 
 ![chrome-system](images/image07.png)
 
-
+<br>
+<br>
 
 ### BIG-IP Setup
 
@@ -80,7 +81,8 @@ BIG-IP has version 17.5.1.3.0.0.19 installed. In version 17.1, PQC for client-si
 
 BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, though ML-KEM is more widely adopted.
 
-> Note: We will not demonstrate server-side SSL PQC in this lab; however, the environment supports it, for exploration.
+> Note: We will not demonstrate server-side SSL PQC in this lab; however, the environment supports it, for exploration.  
+<br>
 
 1. Log in to the BIG-IP to verify access and configuration
 
@@ -98,36 +100,43 @@ Password admin
 
 ![tmui-login](images/image10.png)
 <br>
+<br>
 
 2. Post-quantum crypto configuration
 
 BIG-IP utilizes SSL Profiles for client and server-side TLS negotiations. Within the SSL Profile, attached cipher groups manage the cipher rules for negotiation.
 
 The BIG-IP Configuration has already been completed for the lab. If you would like to configure and familiarize yourself with a new SSL profile, please use the following knowledge article as a reference: [K000149577: Enable post-quantum cryptography in F5 BIG-IP TMOS](https://my.f5.com/manage/s/article/K000149577)
+<br>
 
 3. Navigate to BIG-IP cipher rules
 
 ![cipher-rules](images/image11.png)
+<br>
 
-4. The `TMSH_PQC` PQC profile has been created for you using TMSH.  Please review it using TMUI.
+4. The `TMSH_PQC` PQC profile has been created for you using TMSH.  Please review it using the TMUI.
 
 ![pqc-tmsh](images/image12.png)
-
+<br>
 5. Explore the TMSH_PQC rule, and verify the setup
 
 ![pqc-tmsh-rule](images/image13.png)
+<br>
 
 6. Navigate to BIG-IP cipher groups
 
 ![cipher-groups](images/image14.png)
+<br>
 
 7. Explore the TMSH_PQC group, and verify the setup
 
 ![pqc-tmsh-group](images/image15.png)
+<br>
 
 8. Navigate to SSL Client profiles
 
 ![client-profiles](images/image16.png)
+<br>
 
 9. Explore the TMSH_PQC client SSL profile, and verify the setup
 
