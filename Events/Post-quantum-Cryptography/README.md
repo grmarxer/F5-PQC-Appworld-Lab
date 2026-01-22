@@ -86,7 +86,7 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 > Note: We will not demonstrate server-side SSL PQC in this lab; however, the environment supports it, for exploration.  
 <br>
 
-1. Log in to the BIG-IP to verify access and configuration
+1. Log into the BIG-IP to verify access and configuration
 
 From the Chrome browser, open the BIG-IP TMUI: ```https://10.1.1.6```
 
