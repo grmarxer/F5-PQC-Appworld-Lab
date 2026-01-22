@@ -284,23 +284,23 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 1. Open Chrome and browse to ```https://10.1.10.30``` the listener address on NGINX with the PQC SSL options
 
-![nginx-ssl-error](images/image32.png)
+    ![nginx-ssl-error](images/image32.png)
 <br>
 
 2. Proceed to the website
 
-![nginx-ssl-proceed](images/image31.png)
+    ![nginx-ssl-proceed](images/image31.png)
 <br>
 
 
 3. NGINX is hosting a page with the negotiated SSL curve version listed
 
-![nginx-cipher](images/image33.png)
+    ![nginx-cipher](images/image33.png)
 <br>
 
 4. Open the Chrome browser developer tools 
 
-![developer-tools](images/image34.png)
+    ![developer-tools](images/image34.png)
 <br>  
 
 5. Scroll the developer tools to the left, exposing Privacy and security to show the TLS negotiation
