@@ -243,7 +243,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
 2. View the NGINX configuration file from the prompt with: 
 
-```cat /opt/nginx/nginx.conf```
+    ```cat /opt/nginx/nginx.conf```
 
 ![nginx-conf](images/image29.png)
 
@@ -251,7 +251,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
 3. As a best practice in the nginx.The conf file includes another location for the PQC listener. From the prompt, view the included PQC listener: 
 
-```cat /opt/nginx/conf.d/pqc.conf```
+    ```cat /opt/nginx/conf.d/pqc.conf```
 
 ![nginx-pqc-conf](images/image30.png)
 
