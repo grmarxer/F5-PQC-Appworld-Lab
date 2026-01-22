@@ -35,7 +35,8 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows-client.
     - MAC users should connect with RDP 
     - Windows users should connect using the Console  
-    > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
+
+   > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
    > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
 
     ![rdp](images/image01.png)
@@ -98,7 +99,6 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 
     ![tmui-login](images/image10.png)
 <br>
-<br>
 
 2. Post-quantum crypto configuration
 
@@ -141,11 +141,13 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 
     ![pqc-client-ssl](images/image17.png)
 
-    ![pqc-client-ssl-settings](images/image18.png)
+    ![pqc-client-ssl-settings](images/image18.png)  
+    <br>
 
 10. Navigate to the BIG-IP virtual servers
 
-    ![virtual-servers](images/image19.png)
+    ![virtual-servers](images/image19.png)  
+    <br>
 
 11. Explore the pqc_vs virtual server, and verify the setup
 
@@ -173,19 +175,23 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 1. Open Chrome and browse to `https://10.1.10.100` the virtual server address on the BIG-IP with the PQC SSL Client profile attached
 
-    ![ssl-error](images/image22.png)
+    ![ssl-error](images/image22.png)  
+    <br>
 
 2. Proceed to the website
 
-    ![ssl-proceed](images/image23.png)
+    ![ssl-proceed](images/image23.png)  
+    <br>
 
 3. The loaded page is the NGINX default page
 
-    ![nginx-homepage](images/image24.png)
+    ![nginx-homepage](images/image24.png)  
+    <br>
 
 4. Open the Chrome browser developer tools 
 
-    ![developer-tools](images/image25.png)
+    ![developer-tools](images/image25.png)  
+    <br>
 
 5. Scroll the developer tools to the left, exposing Privacy and security to show the TLS negotiation
 
@@ -232,7 +238,8 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
     >Note: Do not disconnect or close your existing Windows-client connection
 
-    ![webshell-access](images/image28.png)
+    ![webshell-access](images/image28.png)  
+    <br>
 
 
 2. View the NGINX configuration file from the prompt with: 
@@ -248,6 +255,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
     `cat /opt/nginx/conf.d/pqc.conf`
 
     ![nginx-pqc-conf](images/image30.png)
+    <br>
 
 In this configuration, we can see the listening port, the certificate and key used, and the SSL options for exchange, ML-KEM.
 <br>
