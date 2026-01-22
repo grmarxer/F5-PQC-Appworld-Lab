@@ -36,11 +36,11 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
     - MAC users should connect with RDP 
     - Windows users should connect using the Console
  
-> Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
+    > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
 
-> Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
+    > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
 
-![rdp](images/image01.png)
+    ![rdp](images/image01.png)
 
 2. Windows-client admin credentials - **uQpLYwsLUrsyz**
 
@@ -52,10 +52,10 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 
 4. Open the Chrome browser and skip the sign-in process.  **DO NOT** attempt to reinstall Chrome or finish the update.
 
-> Note: Kyber level PQC was an early access feature in Chrome, it has been removed from the current Chrome release. We will be using an older version of Chrome in  this lab.
-<br>
+    > Note: Kyber level PQC was an early access feature in Chrome, it has been removed from the current Chrome release. We will be using an older version of Chrome in  this lab.  <br> 
 
-![chrome-login](images/image05.png)
+
+    ![chrome-login](images/image05.png)
 
 5. Set Chrome as the default browser. This will need to be done in two places, the browser itself and in Windows System properties.  
 
@@ -166,11 +166,9 @@ Enable the security features in Chrome to use the Kyber settings and disable the
 
 2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and disable "Use ML-KEM in TLS 1.3", and relaunch the browser  
 
->Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above  
-<br>
-
-
-![pqc-big-ip-browser-settings](images/image21.png)
+    >Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above  
+    <br>
+    ![pqc-big-ip-browser-settings](images/image21.png)
 
 ### BIG-IP PQC Virtual Server Validation
 
@@ -235,9 +233,9 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
 1. From the UDF lab page, use the access Web Shell  
 
->Note: Do not disconnect or close your existing Windows-client connection  
+    >Note: Do not disconnect or close your existing Windows-client connection
 
-![webshell-access](images/image28.png)
+    ![webshell-access](images/image28.png)
 
 
 2. View the NGINX configuration file from the prompt with: 
@@ -269,10 +267,10 @@ Enable the security features in Chrome to use the Kyber settings, but prefer ML-
 
 2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and enable "Use ML-KEM in TLS 1.3", and relaunch the browser  
 
->Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above  
-<br>
+    >Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above  
+    <br>
 
-![pqc-nginx-browser-settings](images/image27.png)  
+    ![pqc-nginx-browser-settings](images/image27.png)  
 <br>  
 <br>  
 
