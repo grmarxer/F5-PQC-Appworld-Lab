@@ -271,11 +271,12 @@ Enable the security features in Chrome to use the Kyber settings, but prefer ML-
 2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and enable "Use ML-KEM in TLS 1.3", and relaunch the browser  
 
 >Note: Use find (ctrl-f) to quickly locate the ```"tls"``` settings above  
-<br>
+<br> 
 
-![pqc-nginx-browser-settings](images/image27.png)  
-<br>
-<br>
+   ![pqc-nginx-browser-settings](images/image27.png)  
+    
+<br>   
+<br>  
 
 
 ### NGINX PQC Listener Validation
