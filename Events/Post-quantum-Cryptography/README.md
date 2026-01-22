@@ -113,47 +113,47 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 
 3. Navigate to BIG-IP cipher rules
 
-![cipher-rules](images/image11.png)
+    ![cipher-rules](images/image11.png)
 <br>
 
 4. The `TMSH_PQC` PQC profile has been created for you using TMSH.  Please review it using the TMUI.
 
-![pqc-tmsh](images/image12.png)
+    ![pqc-tmsh](images/image12.png)
 <br>
 
 5. Explore the TMSH_PQC rule, and verify the setup
 
-![pqc-tmsh-rule](images/image13.png)
+    ![pqc-tmsh-rule](images/image13.png)
 <br>
 
 6. Navigate to BIG-IP cipher groups
 
-![cipher-groups](images/image14.png)
+    ![cipher-groups](images/image14.png)
 <br>
 
 7. Explore the TMSH_PQC group, and verify the setup
 
-![pqc-tmsh-group](images/image15.png)
+    ![pqc-tmsh-group](images/image15.png)
 <br>
 
 8. Navigate to SSL Client profiles
 
-![client-profiles](images/image16.png)
+    ![client-profiles](images/image16.png)
 <br>
 
 9. Explore the TMSH_PQC client SSL profile, and verify the setup
 
-![pqc-client-ssl](images/image17.png)
+    ![pqc-client-ssl](images/image17.png)
 
 ![pqc-client-ssl-settings](images/image18.png)
 
 10. Navigate to the BIG-IP virtual servers
 
-![virtual-servers](images/image19.png)
+    ![virtual-servers](images/image19.png)
 
 11. Explore the pqc_vs virtual server, and verify the setup
 
-![pqc-virtual-server](images/image20.png)
+    ![pqc-virtual-server](images/image20.png)
 <br>
 <br>
 
@@ -179,23 +179,23 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 1. Open Chrome and browse to ```https://10.1.10.100``` the virtual server address on the BIG-IP with the PQC SSL Client profile attached
 
-![ssl-error](images/image22.png)
+    ![ssl-error](images/image22.png)
 
 2. Proceed to the website
 
-![ssl-proceed](images/image23.png)
+    ![ssl-proceed](images/image23.png)
 
 3. The loaded page is the NGINX default page
 
-![nginx-homepage](images/image24.png)
+    ![nginx-homepage](images/image24.png)
 
 4. Open the Chrome browser developer tools 
 
-![developer-tools](images/image25.png)
+    ![developer-tools](images/image25.png)
 
 5. Scroll the developer tools to the left, exposing Privacy and security to show the TLS negotiation
 
-![tls-kyber](images/image26.png)  
+    ![tls-kyber](images/image26.png)  
 <br>
 <br>
 
@@ -205,9 +205,9 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
     >Note: Do not disconnect or close your existing TMUI connection  
     <br>  
-![web_shell](images/image50.png)
+    ![web_shell](images/image50.png)
     <br>  
-![web_shell1](images/image51.png)
+    ![web_shell1](images/image51.png)
 <br>
 <br>
 
@@ -217,14 +217,14 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
     Note the **protocol** and **DH group** 
     <br>   
-![profile_stats](images/image52.png)
+    ![profile_stats](images/image52.png)
 <br>
 
 3.  View the `pqc_vs` virtual server statistics
 
     ```tmsh show ltm virtual pqc_vs```
     <br>
-![vip_stats](images/image53.png)
+    ![vip_stats](images/image53.png)
 
 <br>
 <br>
@@ -236,16 +236,16 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
 1. From the UDF lab page, use the access Web Shell  
 
->Note: Do not disconnect or close your existing Windows-client connection   
+>Note: Do not disconnect or close your existing Windows-client connection  
 
 ![webshell-access](images/image28.png)
-<br>
+
 
 2. View the NGINX configuration file from the prompt with: 
 
     ```cat /opt/nginx/nginx.conf```
 
-![nginx-conf](images/image29.png)
+    ![nginx-conf](images/image29.png)
 
 <br>
 
@@ -253,7 +253,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
     ```cat /opt/nginx/conf.d/pqc.conf```
 
-![nginx-pqc-conf](images/image30.png)
+    ![nginx-pqc-conf](images/image30.png)
 
 In this configuration, we can see the listening port, the certificate and key used, and the SSL options for exchange, ML-KEM.
 <br>
@@ -273,7 +273,7 @@ Enable the security features in Chrome to use the Kyber settings, but prefer ML-
 >Note: Use find (ctrl-f) to quickly locate the ```"tls"``` settings above  
 <br>
 
-![pqc-nginx-browser-settings](images/image27.png)
+![pqc-nginx-browser-settings](images/image27.png)  
 <br>
 <br>
 
