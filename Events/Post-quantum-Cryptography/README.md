@@ -44,11 +44,11 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 
 2. Windows-client admin credentials - **uQpLYwsLUrsyz**
 
-![password](images/image02.png)
+    ![password](images/image02.png)
 
 3. Accept the RDP certificate error if prompted
 
-![rdp-cert](images/image03.png)
+    ![rdp-cert](images/image03.png)
 
 4. Open the Chrome browser and skip the sign-in process.  **DO NOT** attempt to reinstall Chrome or finish the update.
 
