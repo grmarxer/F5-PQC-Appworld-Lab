@@ -273,7 +273,7 @@ Enable the security features in Chrome to use the Kyber settings, but prefer ML-
 >Note: Use find (ctrl-f) to quickly locate the ```"tls"``` settings above  
 <br> 
 
-   ![pqc-nginx-browser-settings](images/image27.png)  
+&nbsp;![pqc-nginx-browser-settings](images/image27.png)  
     
 <br>   
 <br>  
