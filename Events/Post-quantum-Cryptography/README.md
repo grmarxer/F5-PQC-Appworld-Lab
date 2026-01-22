@@ -88,10 +88,10 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 
 1. Log into the BIG-IP to verify access and configuration
 
-From the Chrome browser, open the BIG-IP TMUI: ```https://10.1.1.6```
+    From the Chrome browser, open the BIG-IP TMUI: ```https://10.1.1.6```
 
-User: admin  
-Password admin
+    User: admin  
+    Password admin
 <br>
 
 ![tmui-warning](images/image08.png)  
