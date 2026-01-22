@@ -34,11 +34,9 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 
 1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows-client.
     - MAC users should connect with RDP 
-    - Windows users should connect using the Console
- 
+    - Windows users should connect using the Console  
     > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
-
-    > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
+   > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
 
     ![rdp](images/image01.png)
 
@@ -53,7 +51,6 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 4. Open the Chrome browser and skip the sign-in process.  **DO NOT** attempt to reinstall Chrome or finish the update.
 
     > Note: Kyber level PQC was an early access feature in Chrome, it has been removed from the current Chrome release. We will be using an older version of Chrome in  this lab.  <br> 
-
 
     ![chrome-login](images/image05.png)
 
