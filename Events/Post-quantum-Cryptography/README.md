@@ -88,7 +88,7 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 
 1. Log into the BIG-IP to verify access and configuration
 
-    From the Chrome browser, open the BIG-IP TMUI: ```https://10.1.1.6```
+    From the Chrome browser, open the BIG-IP TMUI: `https://10.1.1.6`
 
     User: admin  
     Password admin
@@ -167,7 +167,7 @@ Enable the security features in Chrome to use the Kyber settings and disable the
 
 2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and disable "Use ML-KEM in TLS 1.3", and relaunch the browser  
 
->Note: Use find (ctrl-f) to quickly locate the ```"tls"``` settings above
+>Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above
 
 ![pqc-big-ip-browser-settings](images/image21.png)
 <br>
@@ -177,7 +177,7 @@ Enable the security features in Chrome to use the Kyber settings and disable the
 
 With Chrome, check the version of TLS negotiation and the ciphers used.
 
-1. Open Chrome and browse to ```https://10.1.10.100``` the virtual server address on the BIG-IP with the PQC SSL Client profile attached
+1. Open Chrome and browse to `https://10.1.10.100` the virtual server address on the BIG-IP with the PQC SSL Client profile attached
 
     ![ssl-error](images/image22.png)
 
@@ -213,7 +213,7 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 2. View the `TMSH_PQC` profile statistics 
 
-    ```tmsh show ltm profile client-ssl TMSH_PQC```  
+    `tmsh show ltm profile client-ssl TMSH_PQC`
 
     Note the **protocol** and **DH group** 
     <br>   
@@ -222,7 +222,7 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 3.  View the `pqc_vs` virtual server statistics
 
-    ```tmsh show ltm virtual pqc_vs```
+    `tmsh show ltm virtual pqc_vs`
     <br>
     ![vip_stats](images/image53.png)
 
@@ -243,7 +243,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
 2. View the NGINX configuration file from the prompt with: 
 
-    ```cat /opt/nginx/nginx.conf```
+    `cat /opt/nginx/nginx.conf`
 
     ![nginx-conf](images/image29.png)
 
@@ -251,7 +251,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 
 3. As a best practice in the nginx.The conf file includes another location for the PQC listener. From the prompt, view the included PQC listener: 
 
-    ```cat /opt/nginx/conf.d/pqc.conf```
+    `cat /opt/nginx/conf.d/pqc.conf`
 
     ![nginx-pqc-conf](images/image30.png)
 
@@ -265,16 +265,16 @@ The Chrome browser has experimental features that enable Kyber and ML-KEM. Howev
 
 Enable the security features in Chrome to use the Kyber settings, but prefer ML-KEM settings
 
-1. Open the Chrome browser and browse to ```chrome://flags/```
+1. Open the Chrome browser and browse to `chrome://flags/`
 <br>
 
 2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and enable "Use ML-KEM in TLS 1.3", and relaunch the browser  
 
->Note: Use find (ctrl-f) to quickly locate the ```"tls"``` settings above  
+>Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above  
 <br>
 
-![pqc-nginx-browser-settings](images/image27.png)      
-<br>   
+![pqc-nginx-browser-settings](images/image27.png)  
+<br>  
 <br>  
 
 
