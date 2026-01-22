@@ -62,17 +62,16 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 6. Set Chrome as the default browser in Chrome
 
     ![chrome-default](images/image06.png)  
+    <br>
+
+    ![chrome-default1](images/image06-2.png)
 
 <br>
 
-![chrome-default1](images/image06-2.png)
+7. Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome  
+    <br>  
 
-<br>
-
-7. Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome
-<br>
-
-![chrome-system](images/image07.png)
+    ![chrome-system](images/image07.png)
 
 <br>
 <br>
@@ -91,16 +90,16 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
     From the Chrome browser, open the BIG-IP TMUI: `https://10.1.1.6`
 
     User: admin  
-    Password admin
-<br>
+    Password admin  
+    <br>
 
-![tmui-warning](images/image08.png)  
-<br>
+    ![tmui-warning](images/image08.png)  
+    <br>
 
-![tmui-accept](images/image09.png)
-<br>
+    ![tmui-accept](images/image09.png)  
+    <br>
 
-![tmui-login](images/image10.png)
+    ![tmui-login](images/image10.png)
 <br>
 <br>
 
@@ -145,7 +144,7 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 
     ![pqc-client-ssl](images/image17.png)
 
-![pqc-client-ssl-settings](images/image18.png)
+    ![pqc-client-ssl-settings](images/image18.png)
 
 10. Navigate to the BIG-IP virtual servers
 
@@ -167,11 +166,11 @@ Enable the security features in Chrome to use the Kyber settings and disable the
 
 2. Change the experimental settings to enable "TLS 1.3 post-quantum key agreement", and disable "Use ML-KEM in TLS 1.3", and relaunch the browser  
 
->Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above
+>Note: Use find (ctrl-f) to quickly locate the `"tls"` settings above  
+<br>
+
 
 ![pqc-big-ip-browser-settings](images/image21.png)
-<br>
-<br>
 
 ### BIG-IP PQC Virtual Server Validation
 
