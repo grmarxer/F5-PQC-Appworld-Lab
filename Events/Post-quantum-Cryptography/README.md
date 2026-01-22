@@ -16,11 +16,13 @@ NGINX provides PQC support using the Open Quantum Safe provider library for Open
 
 [Understanding PQC Standards and Timelines](https://www.f5.com/company/blog/understanding-pqc-standards-and-timelines)
 
+<br>
+
 ## Lab Environment
 
 This lab environment contains three parts:
 
-- BIG-IP 17.5
+- BIG-IP Version 17.5.1.3.0.0.19
 - NGINX Open Source Server
 - Windows-client
 
@@ -28,7 +30,7 @@ This lab environment contains three parts:
 
 ### Windows-client
 
-From the Windows-client, we will be able to access the BIG-IP TMUI and the websites protected with PQC profiles/OpenSSL behind both BIG-IP and NGINX.
+From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and the websites protected with PQC profiles/OpenSSL.
 
 1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows-client.
     - MAC users should connect with RDP 
