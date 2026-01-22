@@ -34,7 +34,7 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 
 1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows-client.
     - MAC users should connect with RDP 
-    - Windows users should use Console
+    - Windows users should connect using the Console
  
 > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
 
