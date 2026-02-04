@@ -47,7 +47,6 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
    - Windows users: If the RDP session does not display properly or cannot be resized to large screen, please connect using the Console instead
 
    > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
-   <br>
    > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
    <br>
 
