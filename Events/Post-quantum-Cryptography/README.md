@@ -40,15 +40,16 @@ This lab environment contains three parts:
 
 From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and the websites protected with PQC profiles/OpenSSL. In this section, you will primarily perform the following tasks:
 
-- Log in to the Windows client
-- Set the Google Chrome as the default browser
+- Log in to the Windows client and set the Google Chrome as the default browser
 
 1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows-client.
     - MAC users should connect with RDP 
    - Windows users: If the RDP session does not display properly or cannot be resized to large screen, please connect using the Console instead
 
    > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
+   <br>
    > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
+   <br>
 
     ![rdp](images/image01.png)
 
@@ -63,6 +64,7 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 4. Open the Chrome browser and skip the sign-in process.  **DO NOT** attempt to reinstall Chrome or finish the update.
 
     > Note: Kyber level PQC was an early access feature in Chrome, it has been removed from the current Chrome release. We will be using an older version of Chrome in  this lab.  <br> 
+    <br>
 
     ![chrome-login](images/image05.png)
 
@@ -75,15 +77,15 @@ From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and th
 
     ![chrome-default1](images/image06-2.png)
 
-<br>
+    <br>
 
 7. Set Chrome as the default browser in Windows System properties - Settings > Apps > Default apps > Google Chrome  
     <br>  
 
     ![chrome-system](images/image07.png)
 
-<br>
-<br>
+    <br>
+    <br>
 
 ### BIG-IP Setup
 
@@ -93,9 +95,10 @@ BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, th
 
 In this section, you will primarily perform the following tasks:
 
+- Review BIG-IP cipher rules and cipher groups
 - Review BIG-IP client ssl profile
-- Create and verify Cipher Rules and Groups (Cipher Rules & Groups are a visual way to organize and apply cipher suites to your client and ssl profiles
-  
+- Verify the virtual server configuration
+
 > Note: We will not demonstrate server-side SSL PQC in this lab; however, the environment supports it, for exploration.  
 <br>
 
@@ -156,7 +159,8 @@ In this section, you will primarily perform the following tasks:
 9. Explore the TMSH_PQC client SSL profile, and verify the setup
 
     ![pqc-client-ssl](images/image17.png)
-
+    <br>
+    
     ![pqc-client-ssl-settings](images/image18.png)  
     <br>
 
@@ -173,7 +177,7 @@ In this section, you will primarily perform the following tasks:
 
 ### BIG-IP Chrome PQC settings
 
-The Chrome browser, on the Windows-client has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap.
+The Chrome browser, on the Windows-client has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap. In this section you will enable the required settings in chrome to implement PQC
 
 Enable the security features in Chrome to use the Kyber settings and disable the ML-KEM settings
 
@@ -257,6 +261,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 In this section, you will primarily perform the following tasks:
 
 - Review PQC config on NGINX
+- Inspect PQC listner settings
 
 1. From the UDF lab page, use the access Web Shell  
 
@@ -287,9 +292,13 @@ In this configuration, we can see the listening port, the certificate and key us
 
 ### NGINX Chrome PQC settings
 
-The Chrome browser has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap.
+The Chrome browser has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap. In this sectioon we will enable this feature to test PQC
 
 Enable the security features in Chrome to use the Kyber settings, but prefer ML-KEM settings
+
+In this section, you will primarily perform the following tasks:
+
+- Validate TLS Negotation
 
 1. Open the Chrome browser and browse to `chrome://flags/`
 <br>
@@ -335,4 +344,5 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 <br>
 <br>
 
+That concludes the lab, you should have learned why PQC is a strategic security priority and how PQC is implemented in BIG-IP and NGINX.
 ## Lab Complete
