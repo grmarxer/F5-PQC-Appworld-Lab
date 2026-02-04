@@ -16,6 +16,14 @@ NGINX provides PQC support using the Open Quantum Safe provider library for Open
 
 [Understanding PQC Standards and Timelines](https://www.f5.com/company/blog/understanding-pqc-standards-and-timelines)
 
+
+## The lab
+This lab provides hands-on experience with PQC across modern application delivery architectures. It will build a practical understanding of where PQC fits in the TLS stack, how it is implemented on F5 and NGINX, and how to validate the traffic behavior. By the end of the lab, you will be able to:
+
+- Understand core PQC concepts and standards
+- Configure PQC enabled TLS profiles on F5 BIG-IP for client-side encryption
+- Explore PQC implementation in NGINX using OpenSSL and the Open Quantum Safe (OQS) provider
+- Validate PQC cipher negotiation using Chrome developer tools
 <br>
 
 ## Lab Environment
@@ -30,11 +38,14 @@ This lab environment contains three parts:
 
 ### Windows-client
 
-From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and the websites protected with PQC profiles/OpenSSL.
+From the Windows-client we will be able to access the BIG-IP TMUI, NGINX, and the websites protected with PQC profiles/OpenSSL. In this section, you will primarily perform the following tasks:
+
+- Log in to the Windows client
+- Set the Google Chrome as the default browser
 
 1. Navigate to the details button of the Windows-client. Select either RDP or Console to access the Windows-client.
     - MAC users should connect with RDP 
-    - Windows users should connect using the Console  
+   - Windows users: If the RDP session does not display properly or cannot be resized to large screen, please connect using the Console instead
 
    > Note: For RDP, select the appropriate resolution format -- This will initiate the rdp file download which then can be used to access the Windows-client.
    > Note: To run the RDP session in "windowed" mode, choose a screen size from the drop-down list
@@ -80,6 +91,11 @@ BIG-IP has version 17.5.1.3.0.0.19 installed. In version 17.1, PQC for client-si
 
 BIG-IP supports both Kyber and ML-KEM, in this lab we will demonstrate Kyber, though ML-KEM is more widely adopted.
 
+In this section, you will primarily perform the following tasks:
+
+- Review BIG-IP client ssl profile
+- Create and verify Cipher Rules and Groups (Cipher Rules & Groups are a visual way to organize and apply cipher suites to your client and ssl profiles
+  
 > Note: We will not demonstrate server-side SSL PQC in this lab; however, the environment supports it, for exploration.  
 <br>
 
@@ -237,6 +253,10 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 ### NGINX Setup
 
 NGINX utilizes the OpenSSL package installed on the host operating system for the SSL library. The OpenSSL 3.5 package, SSL certificate, SSL Key, and NGINX configuration are already complete. Review the settings for understanding.
+
+In this section, you will primarily perform the following tasks:
+
+- Review PQC config on NGINX
 
 1. From the UDF lab page, use the access Web Shell  
 
