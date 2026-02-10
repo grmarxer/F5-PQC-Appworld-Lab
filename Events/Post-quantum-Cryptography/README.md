@@ -242,7 +242,8 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
     `tmsh show ltm profile client-ssl TMSH_PQC`
 
-    Note the **protocol** and **DH group** 
+    >Note: the **protocol** and **DH group** 
+    
     <br>   
     ![profile_stats](images/image52.png)
 <br>
