@@ -252,6 +252,7 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 3.  View the `pqc_vs` virtual server statistics
 
     `tmsh show ltm virtual pqc_vs`
+    
     <br>
     ![vip_stats](images/image53.png)
 
