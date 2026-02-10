@@ -233,7 +233,8 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
     ![web_shell](images/image50.png)  
 
     <br>     
-    ![web_shell1](images/image51.png)
+    ![web_shell1](images/image51.png)  
+
 <br>
 <br>
 
@@ -251,9 +252,10 @@ With Chrome, check the version of TLS negotiation and the ciphers used.
 
 3.  View the `pqc_vs` virtual server statistics
 
-    `tmsh show ltm virtual pqc_vs`
+    `tmsh show ltm virtual pqc_vs`  
+
+    <br>  
     
-    <br>
     ![vip_stats](images/image53.png)
 
 <br>
