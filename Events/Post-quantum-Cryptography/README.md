@@ -299,7 +299,7 @@ In this configuration, we can see the listening port, the certificate and key us
 
 ### NGINX Chrome PQC settings
 
-The Chrome browser has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap. In this sectioon we will enable this feature to test PQC
+The Chrome browser has experimental features that enable Kyber and ML-KEM. However, as mentioned earlier, these features have been removed from the current version of Chrome due to a security gap. In this section we will enable this feature to test PQC
 
 Enable the security features in Chrome to use the Kyber settings, but prefer ML-KEM settings
 
