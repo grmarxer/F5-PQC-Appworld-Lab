@@ -305,7 +305,7 @@ Enable the security features in Chrome to use the Kyber settings, but prefer ML-
 
 In this section, you will primarily perform the following tasks:
 
-- Validate TLS Negotation
+- Validate TLS Negotiation
 
 1. Open the Chrome browser and browse to `chrome://flags/`
 <br>
