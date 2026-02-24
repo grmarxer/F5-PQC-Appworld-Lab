@@ -270,7 +270,7 @@ In this section, you will primarily perform the following tasks:
 - Review PQC config on NGINX
 - Inspect PQC listner settings
 
-1. From the UDF lab page, use the access Web Shell  
+1. From the UDF lab page, access the Web Shell  
 
     >Note: Do not disconnect or close your existing Windows-client connection
 
@@ -286,7 +286,7 @@ In this section, you will primarily perform the following tasks:
 
 <br>
 
-3. As a best practice in the nginx.The conf file includes another location for the PQC listener. From the prompt, view the included PQC listener: 
+3. The nginx conf file includes another location for the PQC listener. From the prompt, view the included PQC listener: 
 
     `cat /opt/nginx/conf.d/pqc.conf`
 
