@@ -268,7 +268,7 @@ NGINX utilizes the OpenSSL package installed on the host operating system for th
 In this section, you will primarily perform the following tasks:
 
 - Review PQC config on NGINX
-- Inspect PQC listner settings
+- Inspect PQC listener settings
 
 1. From the UDF lab page, access the NGINX Web Shell  
 
