@@ -270,7 +270,7 @@ In this section, you will primarily perform the following tasks:
 - Review PQC config on NGINX
 - Inspect PQC listner settings
 
-1. From the UDF lab page, access the Web Shell  
+1. From the UDF lab page, access the NGINX Web Shell  
 
     >Note: Do not disconnect or close your existing Windows-client connection
 
